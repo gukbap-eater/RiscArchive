@@ -37,6 +37,7 @@ https://github.com/chaealarm/arduino-wch32v003/releases/download/Package_Json/pa
 * GPIO 핀은 PORTA, PORTC, PORTD에 따라 A1-A2, C0-C7, D0-D7 로 지정
 * 펌웨어 업로드 시 상기한 부트로더로 진입하여야 업로드 가능
 * USART(Serial)은 해당 핀들이 USB 핀으로 사용되므로 사용 불가
+* D1(DIO), D3(USB D+), D4(USB D-), D5(USB Pull-UP) 핀은 GPIO로 사용을 권장하지 않습니다. 
 
 ## ch32v003fun을 이용하여 C언어로 코딩하기(Windows만 가능)
 * 참고 : https://github.com/cnlohr/ch32v003fun
@@ -47,3 +48,5 @@ https://github.com/chaealarm/arduino-wch32v003/releases/download/Package_Json/pa
   2. RiscArchive 보드를 부트로더 상태로 진입(상기 부트로더 내용 참고)
   3. make 입력 후 엔터
   4. 빌드 및 업로드됨
+* USART(Serial)은 해당 핀들이 USB 핀으로 사용되므로 사용 불가
+* D1(DIO), D3(USB D+), D4(USB D-), D5(USB Pull-UP) 핀은 GPIO로 사용을 권장하지 않습니다.
